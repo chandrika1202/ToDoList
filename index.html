@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Creative To-Do List</h1>
+        <!-- Task Input and Priority -->
+        <div class="task-input-container">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <select id="priority-select">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+            <button id="add-button">Add</button>
+        </div>
+        <!-- To-Do List -->
+        <ul id="todo-list"></ul>
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

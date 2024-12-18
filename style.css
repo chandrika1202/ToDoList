@@ -1,0 +1,152 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;  /* Center text globally */
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+/* Container Styling */
+.todo-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 450px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center items within the container */
+}
+
+body.dark-theme .todo-container {
+    background: #333;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Ensure the heading is centered */
+}
+
+body.dark-theme h1 {
+    color: white;
+}
+
+/* Input Container */
+.task-input-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center; /* Center input elements */
+}
+
+/* Input Fields Styling */
+#task-input, #priority-select, #add-button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    text-align: center;  /* Center text inside input fields */
+}
+
+/* Task Input Field */
+#task-input {
+    flex: 1;
+    background-color: #e9ecef;
+}
+
+/* Buttons Styling */
+#add-button {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+#add-button:hover {
+    background: linear-gradient(45deg, #e52e71, #ff8a00);
+}
+
+.theme-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.theme-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* To-Do List */
+ul#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual To-Do Item */
+li.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s;
+    text-align: center; /* Ensure task text is centered */
+}
+
+li.todo-item:hover {
+    background-color: #f8f9fa;
+}
+
+body.dark-theme li.todo-item {
+    background: #444;
+}
+
+li.todo-item.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
